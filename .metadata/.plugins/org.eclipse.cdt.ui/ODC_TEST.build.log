@@ -1,0 +1,36 @@
+15:14:00 **** Incremental Build of configuration Debug for project ODC_TEST ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:5:
+e:/embedded/amit/uart_tools/sdk_win_64/sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: ODC_TEST.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ODC_TEST.map -mmcu=atmega32 -o "ODC_TEST.elf"  ./MCAL/M_Timer_Driver/M_Timer_Driver.o  ./MCAL/M_DIO_Driver/M_DIO_Init.o  ./HAL/H_Seven_Segment/H_Seven_Segment.o  ./HAL/H_LCD_Driver/H_LCD.o  ./HAL/H_KeyPad_Driver/H_KeyPad.o  ./main.o   
+Finished building target: ODC_TEST.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ODC_TEST.elf  >"ODC_TEST.lss"
+Finished building: ODC_TEST.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ODC_TEST.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10966 bytes (33.5% Full)
+(.text + .data + .bootloader)
+
+Data:        286 bytes (14.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+15:14:01 Build Finished (took 1s.12ms)
+

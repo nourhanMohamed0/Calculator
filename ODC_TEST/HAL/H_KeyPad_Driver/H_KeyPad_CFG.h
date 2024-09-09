@@ -1,0 +1,29 @@
+/*
+ * H_KeyPad_CFG.h
+ *
+ *  Created on: Sep 5, 2024
+ *      Author: Nourhan Mohamed Hassan
+ */
+
+#ifndef HAL_H_KEYPAD_DRIVER_H_KEYPAD_CFG_H_
+#define HAL_H_KEYPAD_DRIVER_H_KEYPAD_CFG_H_
+
+#define KEYPAD_COL_PORT PORT_D
+#define KEYPAD_COL_PIN4 PIN4
+#define KEYPAD_COL_PIN5 PIN5
+#define KEYPAD_COL_PIN6 PIN6
+#define KEYPAD_COL_PIN7 PIN7
+
+#define KEYPAD_ROW_PORT PORT_D
+#define KEYPAD_ROW_PIN0 PIN0
+#define KEYPAD_ROW_PIN1 PIN1
+#define KEYPAD_ROW_PIN2 PIN2
+#define KEYPAD_ROW_PIN3 PIN3
+
+#define NOT_PRESSED 0XFF
+#define ROWS_NUMBER 4
+#define COL_NUMBER 4
+
+
+
+#endif /* HAL_H_KEYPAD_DRIVER_H_KEYPAD_CFG_H_ */
